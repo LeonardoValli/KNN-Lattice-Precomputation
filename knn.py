@@ -159,8 +159,8 @@ TREE = build_knn_tree()
 print(f"Built KNN tree in {perf_counter() - start:.4f}s")
 
 start = perf_counter()
-# LATTICE = generate_lattice()
-LATTICE = load_lattice()
+LATTICE = generate_lattice()
+# LATTICE = load_lattice()
 print(f"Generated lattice in {perf_counter() - start:.4f}s")
 
 # start = perf_counter()
@@ -178,10 +178,7 @@ confusion_matrix(classify)
 
 
 """
-Annoy
-no accuracy loss
-https://github.com/spotify/annoy
-https://en.wikipedia.org/wiki/Locality-sensitive_hashing#Random_projection
+RESULTS
 
 Lattice 3-per-dim build time: 5.2s
 Lattice 4-per-dim build time: 220s
